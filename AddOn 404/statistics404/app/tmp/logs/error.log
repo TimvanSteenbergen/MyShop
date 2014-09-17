@@ -1,0 +1,254 @@
+2013-01-08 15:38:11 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:40:42 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:44:25 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:44:47 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:50:05 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:51:33 Error: [MissingControllerException] Controller class ListController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:51:38 Error: [MissingControllerException] Controller class ListsController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:52:09 Error: [MissingControllerException] Controller class ListsController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:52:16 Error: [MissingControllerException] Controller class Lists.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:52:31 Error: [MissingControllerException] Controller class ListsController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:53:56 Error: [MissingControllerException] Controller class ListsController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:54:06 Error: [MissingActionException] Action ListsController::index() could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ListsController), Object(CakeRequest), Object(CakeResponse))
+#2 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 15:55:07 Error: [MissingActionException] Action ListsController::index() could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ListsController), Object(CakeRequest), Object(CakeResponse))
+#2 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 15:55:15 Error: [MissingViewException] View file "/domains/wonderbrashop.nl/public_html/statistics404/app/View/Lists/index.ctp" is missing.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-08 15:55:57 Error: [MissingControllerException] Controller class Lists.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:56:04 Error: [MissingViewException] View file "/domains/wonderbrashop.nl/public_html/statistics404/app/View/Lists/index.ctp" is missing.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-08 15:58:06 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:59:07 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 15:59:15 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-08 16:01:00 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 04:15:36 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 04:15:37 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 04:59:57 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 04:59:57 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 14:56:27 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 14:56:36 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 20:37:12 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 20:37:13 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 13:11:50 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 13:11:51 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 13:12:12 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 13:12:12 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 14:56:32 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 14:57:03 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 16:06:23 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 18:46:02 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 18:46:02 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 18:57:23 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 18:57:23 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 22:29:12 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-10 22:29:12 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 08:55:33 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 08:55:33 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 08:57:41 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 08:57:41 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 09:07:54 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 09:09:29 Error: [MissingActionException] Action AppController::Controller() could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-11 09:12:00 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 09:14:57 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 09:15:57 Error: [MissingActionException] Action AppController::Controller() could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-11 09:21:29 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 09:21:29 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 09:25:01 Error: [MissingControllerException] Controller class Lists.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 09:47:48 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 09:47:48 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 10:15:58 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 10:15:58 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 23:00:36 Error: [MissingActionException] Action AppController::Controller() could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-11 23:03:13 Error: [MissingActionException] Action AppController::Controller() could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /domains/wonderbrashop.nl/public_html/statistics404/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-15 09:53:50 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 09:53:50 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 10:57:50 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 10:57:51 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 11:11:24 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 11:11:25 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 11:48:06 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 11:48:06 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 16:58:37 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 16:59:46 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 16:59:47 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 17:02:44 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 17:02:44 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 17:12:23 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 17:12:23 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 17:12:33 Error: [MissingControllerException] Controller class List.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 17:28:29 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 17:28:29 Error: [MissingControllerException] Controller class Register.phpController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 21:20:45 Error: [MissingControllerException] Controller class ListController could not be found.
+#0 /domains/wonderbrashop.nl/public_html/statistics404/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

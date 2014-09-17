@@ -1,0 +1,1 @@
+For documentation see docs.busyweb.nl/ subdir 'Customer MyShop' subdir 'AddOn 404' document 'Description of MyShopAddOn 404Statistics.docx'
