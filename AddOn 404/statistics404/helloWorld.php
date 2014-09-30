@@ -23,7 +23,6 @@
 	 * for use in the design, construction, operation or maintenance of any
 	 * nuclear facility.
 	 *
-	 *
 	 * helloWorld.php
 	 * 
 	 * Shows example usage of myshopRequest class.
