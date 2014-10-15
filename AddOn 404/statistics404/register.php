@@ -38,21 +38,45 @@
         $request_uri=$request_uri.$client_query_string;
     }
     mysql_select_db($database, $con);
-    $mysql = "INSERT INTO `mw_addon_404`.`404` 
+    /*$mysql = "INSERT INTO `mw_addon_404`.`404` 
                     (`index`, `datetime`, `request_uri`, `referer`, `shop_id`, `ip`, `session_id`, `user_agent`, `accept_language`, 
                      `context_query_string`, `client_query_string`, `update_data2`, `update_data1`)
                 VALUES (NULL, '" . $datetime . "', '" . $request_uri . "', '" . $referer . "', '" . $shop_id . "', '" . $ip . "', '" . $session_id . "', '" .
     $user_agent . "', '" . $accept_language . "', '" . $context_query_string . "', '" . $client_query_string . "', '" .
-    $update_data2 . "', '" . $update_data1 . "');";
+    $update_data2 . "', '" . $update_data1 . "');";*/
     
     //since the contextquerystring takes up most space and is not used, I have stopped registering it by narrowing down the myqsl-query:
     
     $mysql = "INSERT INTO `mw_addon_404`.`404`
-                    (`index`, `datetime`, `request_uri`, `referer`, `shop_id`, `ip`, `session_id`, `user_agent`, `accept_language`,
-                     `client_query_string`, `update_data2`, `update_data1`))
-                VALUES (NULL, '" . $datetime . "', '" . $request_uri . "', '" . $referer . "', '" . $shop_id . "', '" . $ip . "', '" . $session_id . "', '" .
-    $user_agent . "', '" . $accept_language . "', '" . $client_query_string . "', '" .
-    $update_data2 . "', '" . $update_data1 . "');";
+                    (
+                        `index`,
+                        `datetime`,
+                        `request_uri`,
+                        `referer`,
+                        `shop_id`,
+                        `ip`,
+                        `session_id`,
+                        `user_agent`,
+                        `accept_language`,
+                        `client_query_string`,
+                        `update_data2`,
+                        `update_data1`
+                    )
+                VALUES
+                    (
+                        NULL,
+                        '" . $datetime . "',
+                        '" . $request_uri . "',
+                        '" . $referer . "',
+                        '" . $shop_id . "',
+                        '" . $ip . "',
+                        '" . $session_id . "',
+                        '" . $user_agent . "',
+                        '" . $accept_language . "',
+                        '" . $client_query_string . "',
+                        '" . $update_data2 . "',
+                        '" . $update_data1 . "'
+                    );";
     
     //echo '$mysql:' . $mysql . '</br>';
     //For testingpurposes you can change the sql to this, upload register.php to tieka.nl/statistics404 and go to http://www.tieka.nl/statistics404/register.php
