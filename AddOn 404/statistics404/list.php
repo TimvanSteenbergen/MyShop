@@ -111,6 +111,7 @@ try {
  };
  $actionvarparameters = setactionvarparameters($my_pagenr, $my_urlsperpage, $my_sortfield, $my_sortdirection, $my_view, $my_eyes);
  //$body .= 'SQL:' . $mysql;
+ 
  $result = mysql_query($mysql);
 
 //4 Show the data on screen

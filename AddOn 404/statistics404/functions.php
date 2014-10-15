@@ -71,11 +71,11 @@ function getparameterfromXMLstring($parametername, $XMLstring) {
 }
 
 function getactionvarparameters(&$actionvar, &$pagenr, &$urlsperpage, &$my_sortfield, &$my_sortdirection, &$my_view, &$my_eyes) {
-
  if (!strpos($actionvar, '&')) {
   return;
  };
  $my_startpos = strpos($actionvar, '&');
+
  if (!$my_startpos) {
   return;
  };

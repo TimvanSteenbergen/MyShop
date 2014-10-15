@@ -88,5 +88,5 @@
 
     mysql_query($mysql);
     mysql_close($con);
-    echo 'oke';
+    //echo 'oke';
 ?>
