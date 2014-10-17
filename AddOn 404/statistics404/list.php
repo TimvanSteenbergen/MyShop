@@ -39,7 +39,7 @@
 	$my_urlsperpage   = ($my_urlsperpage <= 1 or $my_urlsperpage >= 999) ? 50 : $my_urlsperpage;
 	$my_pagenrlast    = max(intval((getnumofrecords($my_shop_id, $my_view, $my_eyes) + $my_urlsperpage - 1) / $my_urlsperpage), 1);
 	$my_sortfield     = ( $my_sortfield == '') ? 'index' : $my_sortfield;
-	$my_sortdirection = ( $my_sortdirection == '') ? 'ASC' : $my_sortdirection;
+	$my_sortdirection = ( $my_sortdirection == '') ? 'DESC' : $my_sortdirection;
 	$my_sorttext      = '`' . $my_sortfield . '` ' . $my_sortdirection;
 	$my_view          = ( $my_view == '') ? '1' : $my_view;
 	$my_eyes          = ( $my_eyes == '') ? 'both_open_and_closed_eyes' : $my_eyes;
@@ -105,18 +105,19 @@
 	
 	$my_lowerlimit = $my_urlsperpage * ($my_pagenr - 1);
 	if ($my_view == 1) { //View: Grouped
-		$mysql = "SELECT `request_uri`, `referer`, `datetime`, `update_data2`, `status`, count(*) as 'aantal' 
+		$mysql = "SELECT `request_uri`, `referer`, `datetime`, `update_data2`, `status`, count(shop_id) as 'aantal' 
 					FROM `404` 
-					WHERE `shop_id`=" . $my_shop_id . $my_eyes_whereclause . " 
+					WHERE `shop_id`='" . $my_shop_id . "'" . $my_eyes_whereclause . " 
 					GROUP BY `404`.`request_uri` 
 					ORDER BY $my_sorttext LIMIT " . $my_lowerlimit . "," . $my_urlsperpage . ";";
 	}
 	else {             //View: Detailed
 		$mysql = "SELECT `index`, `request_uri`, `referer`, `datetime`, `update_data2`, `status` 
 					FROM `404` 
-					WHERE `shop_id`=" . $my_shop_id . $my_eyes_whereclause . " 
+					WHERE `shop_id`='" . $my_shop_id . "'". $my_eyes_whereclause . " 
 					ORDER BY $my_sorttext LIMIT " . $my_lowerlimit . "," . $my_urlsperpage . ";";
 	};
+	//$body .= $mysql;
 	$actionvarparameters = setactionvarparameters($my_pagenr, $my_urlsperpage, $my_sortfield, $my_sortdirection, $my_view, $my_eyes);
 	//$body .= 'SQL:' . $mysql;
 	$result = mysql_query($mysql);
@@ -228,7 +229,7 @@
 	$body .= '</td></tr></table>';
 	
 	//The URLS and their data
-	$body .= '<br/><table style="border: 1px solid black; table-layout: fixed; width: 810px;"><tr style="background-color:#DDDDDD;">
+	$body .= '<br/><table style="border: 1px solid #cccccc; table-layout: fixed; width: 810px;"><tr style="background-color:#DDDDDD;">
 	<th style="width: 15px;"></th>
 	<th style="width: 20px;"></th>
 	<th style="width: 25px;"></th>'; //Tableheader: first three empty title-cells
@@ -253,7 +254,7 @@
 	<th class="tableheader" style="width: 80px;">
 	<span onclick="doAction(\'sort_on_field\',\'datetime' . $actionvarparameters . '\');">' . translate('Date') . '/'
 	. (($my_sortfield == 'datetime') ? '<img src="https://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . '<br/>' . translate('Time') . '</span></th>
-	<th class="tableheader" style="width: 50px;">
+	<th class="tableheader" style="width: 70px;">
 	<span onclick="doAction(\'sort_on_field\',\'update_data2' . $actionvarparameters . '\');">404' . '/'
 	. (($my_sortfield == 'update_data2') ? '<img src="https://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . '<br/>' . translate('Noresult') . '</span></th>
 	</tr>'; //Titlecells datetime and 404/Noresult
