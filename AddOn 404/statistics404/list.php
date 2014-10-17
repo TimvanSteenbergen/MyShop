@@ -39,6 +39,7 @@
 	$my_urlsperpage   = ($my_urlsperpage <= 1 or $my_urlsperpage >= 999) ? 50 : $my_urlsperpage;
 	$my_pagenrlast    = max(intval((getnumofrecords($my_shop_id, $my_view, $my_eyes) + $my_urlsperpage - 1) / $my_urlsperpage), 1);
 	$my_sortfield     = ( $my_sortfield == '') ? 'index' : $my_sortfield;
+	
 	$my_sortdirection = ( $my_sortdirection == '') ? 'DESC' : $my_sortdirection;
 	$my_sorttext      = '`' . $my_sortfield . '` ' . $my_sortdirection;
 	$my_view          = ( $my_view == '') ? '1' : $my_view;
@@ -104,6 +105,7 @@
 	};
 	
 	$my_lowerlimit = $my_urlsperpage * ($my_pagenr - 1);
+	if ($my_sorttext == "`50` index") { $my_sorttext = "`index` DESC"; $my_eyes_whereclause = ''; }
 	if ($my_view == 1) { //View: Grouped
 		$mysql = "SELECT `request_uri`, `referer`, `datetime`, `update_data2`, `status`, count(shop_id) as 'aantal' 
 					FROM `404` 

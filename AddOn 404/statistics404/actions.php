@@ -13,10 +13,10 @@ if ($action == "delete") {
 if ($action == "delete_allselected") {
 //Delete all selected requested entries
  if ($my_view == 1) {
-  $actionvar = str_replace('-', '\' OR `request_uri` = \'', $actionvar);
+  //$actionvar = str_replace('-', '\' OR `request_uri` = \'', $actionvar);
   $mysql = "DELETE FROM `mw_addon_404`.`404` WHERE `shop_id`='" . $my_shop_id . "' -- WHERE `request_uri` = '" . $actionvar . "'";
  } else {
-  $actionvar = str_replace('-', '\' OR `index` = \'', $actionvar);
+  //$actionvar = str_replace('-', '\' OR `index` = \'', $actionvar);
   $mysql = "DELETE FROM `mw_addon_404`.`404` WHERE `shop_id`='" . $my_shop_id . "' -- WHERE `index` = '" . $actionvar . "'";
  };
  mysql_query($mysql);
@@ -33,10 +33,10 @@ if ($action == "status_seentonew") {
 if ($action == "status_seentonew_allselected") {
 //Set the status of all selected entrys to new
  if ($my_view == 1) {
-  $actionvar = str_replace('-', '\' OR `request_uri` = \'', $actionvar);
+  //$actionvar = str_replace('-', '\' OR `request_uri` = \'', $actionvar);
   $mysql = "UPDATE `mw_addon_404`.`404` SET  `status` =  'new' WHERE `shop_id`='" . $my_shop_id . "' -- WHERE `request_uri` = '" . $actionvar . "'";
  } else {
-  $actionvar = str_replace('-', '\' OR `index` = \'', $actionvar);
+  //$actionvar = str_replace('-', '\' OR `index` = \'', $actionvar);
   $mysql = "UPDATE `mw_addon_404`.`404` SET  `status` =  'new' WHERE `shop_id`='" . $my_shop_id . "' -- WHERE `index` = '" . $actionvar . "'";
  };
  mysql_query($mysql);
@@ -53,10 +53,10 @@ if ($action == "status_newtoseen") {
 if ($action == "status_newtoseen_allselected") {
 //Set the status of all selected entries to seen
  if ($my_view == 1) {
-  $actionvar = str_replace('-', '\' OR `request_uri` = \'', $actionvar);
+  //$actionvar = str_replace('-', '\' OR `request_uri` = \'', $actionvar);
   $mysql = "UPDATE `mw_addon_404`.`404` SET  `status` =  'seen' WHERE `shop_id`='" . $my_shop_id . "' --  WHERE `request_uri` = '" . $actionvar . "'";
  } else {
-  $actionvar = str_replace('-', '\' OR `index` = \'', $actionvar);
+  //$actionvar = str_replace('-', '\' OR `index` = \'', $actionvar);
   $mysql = "UPDATE `mw_addon_404`.`404` SET  `status` =  'seen' WHERE `shop_id`='" . $my_shop_id . "' --  WHERE `index` = '" . $actionvar . "'";
  };
  mysql_query($mysql);
