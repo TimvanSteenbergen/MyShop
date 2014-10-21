@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 20, 2014 at 04:25 PM
+-- Generation Time: Oct 21, 2014 at 05:08 PM
 -- Server version: 5.5.38-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.3
 
@@ -28,9 +28,13 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `topx_data` (
 `id` int(11) NOT NULL,
+  `order_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `amount` int(11) NOT NULL,
-  `order_date` bigint(20) NOT NULL
+  `order_date` bigint(20) NOT NULL,
+  `customer_email` varchar(20) NOT NULL,
+  `shop_id` int(11) NOT NULL,
+  `also_bought` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
@@ -41,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `topx_data` (
 -- Indexes for table `topx_data`
 --
 ALTER TABLE `topx_data`
- ADD PRIMARY KEY (`id`), ADD KEY `product_id` (`product_id`,`amount`,`order_date`);
+ ADD PRIMARY KEY (`id`), ADD KEY `product_id` (`product_id`,`amount`,`order_date`), ADD KEY `order_id` (`order_id`), ADD KEY `customer_email` (`customer_email`), ADD KEY `shop_id` (`shop_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
