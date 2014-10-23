@@ -5,11 +5,6 @@
 	define ("DB_PASS", "root");
 	define ("DB_NAME", "my_addon_topx");
 	
-	
-	
-	
-	
-	
 	$_array_dummy_data = array(
 		array('260300_03486','20141021','3031','1','loomanrenee@gmail.com','260309'),
 		array('260300_03486','20141021','3032','1','loomanrenee@gmail.com','260309'),

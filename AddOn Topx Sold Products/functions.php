@@ -16,6 +16,10 @@
 
     function topx_display() {
         
+        $_query = mysql_query("SELECT top_x, product_id FROM topx ORDER BY top_x DESC, process_date DESC LIMIT 3");
+        while ($_row = mysql_fetch_array($_query)) {
+            echo $_row[1]." | ";
+        }
         
     }
     
