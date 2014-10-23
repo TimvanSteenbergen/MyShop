@@ -37,7 +37,7 @@
 		VALUES ('$order_id', '".strtotime($order_date)."', '$product_id', '$quantity', '$customer_email', '$shop_id')";
 		*/
 		
-		$_query_insert = "INSERT INTO `topx` (`order_id`, `order_date`, `product_id`, `quantity`, `customer_email`, `shop_id`)
+		$_query_insert = "INSERT INTO `order_data` (`order_id`, `order_date`, `product_id`, `quantity`, `customer_email`, `shop_id`)
 		VALUES ('$order_id', '$order_date', '$product_id', '$quantity', '$customer_email', '$shop_id')";
 		
 		echo $_query_insert."<br />";
@@ -46,6 +46,16 @@
 		mysql_query($_query_insert);
 		
 	}
+	
+	$query = mysql_query("SELECT count(id) as `top_x`, product_id FROM order_data GROUP BY product_id HAVING `top_x` > 1");
+	while($row=mysql_fetch_array($query)) {
+        $_array[] = array($row[0],$row[1]);
+	}
+    
+    foreach ($_array as $key => $row) {
+		echo "INSERT INTO topx SET top_x = {$row[0]}, product_id = {$row[1]}, process_date = UNIX_TIMESTAMP(NOW())<br />";
+        mysql_query("INSERT INTO topx SET top_x = {$row[0]}, product_id = {$row[1]}, process_date = UNIX_TIMESTAMP(NOW())");
+    }
 	
 	
 	
