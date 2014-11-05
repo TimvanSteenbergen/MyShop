@@ -16,7 +16,7 @@
 	$baseLocation = '/connections/statistics404/';
 	
 	/* Base string for the body */
-	$body = '';
+	$body = 'aici';
 
 	//1 Get the parameters and the action-parameters
 	//* Create MyshopRequest instance */
@@ -26,6 +26,26 @@
 	$XMLtext = @file_get_contents('php://input');
 	
 	$XMLtextClean = str_replace("<![CDATA[", "", str_replace("]]>", "", $XMLtext));
+	
+	
+	
+	/* Get state variables */
+	$stateVariables   = $myshopRequest->getStates(); // Returns associative array with all state variables
+	$pluginParameters = $myshopRequest->getParams(); // Returns associative array with all plugin parameters
+	$my_shop_id       = $myshopRequest->getParam('master_shopid');
+	$action           = $myshopRequest->getParam('action');
+	$actionvar        = $myshopRequest->getParam('actionvar');
+	getactionvarparameters($actionvar, $my_pagenr, $my_urlsperpage, $my_sortfield, $my_sortdirection, $my_view, $my_eyes); // Retrieves the requested parameters from $actionvar
+
+	
+	//Find the editlanguage and include the text-elements for that language
+	$my_language = getelementfromXMLstring('editlang', $XMLtextClean);
+	if ($my_language == "nl") {
+		include_once('lang/nl.lang.php');
+	}
+	else {//default to english
+		include_once('lang/en.lang.php');
+	};
 
 
 	echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";

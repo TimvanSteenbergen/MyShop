@@ -1,0 +1,28 @@
+
+select.width200{width: 200px}
+
+.tableheader{
+ cursor: pointer;
+}
+.inputarrow{
+ border: 1px solid #AAAAAA;
+ border-radius: 12px 12px 12px 12px;
+ color: #111111;
+ cursor: pointer;
+ font-weight: bold;
+ font-size: 10px;
+ padding: 3px 7px;
+ text-decoration: none;
+ text-shadow: 0 1px 0 #FFFFFF;
+ text-align: center;
+ background: -moz-linear-gradient(center top , #FFFFFF, #CCCCCC) repeat scroll 0 0 transparent;}
+
+.columnsorttext{
+ border: 1px solid #AAAAAA;
+ border-radius: 0px 0px 12px 12px;
+ color: #666666;
+ font-size: 9px;
+ padding: 0px 7px 3px 7px ;
+ text-decoration: none;
+ text-align: center;
+ background-color: #CCCCCC;}
