@@ -149,19 +149,19 @@
 	//Leftcolumn with SelectAll, SelectNone, DeleteAll, Eyesopen, EyesClosed
 	$body .= '<table style="table-layout: fixed; width: 810px;">';
 	$body .= '<tr><td style="width: 560px;">';
-	$body .= '<img src="https://www.tieka.nl/statistics404/img/checkboxon_low.png" title="' . translate('selectall') . '" onclick="$(\':checkbox\').attr(\'checked\',true);" value="true"></img>' . translate('selectall') . '<br/>';
-	$body .= '<img src="https://www.tieka.nl/statistics404/img/checkboxoff_low.png" title="' . translate('selectnone') . '" onclick="$(\':checkbox\').attr(\'checked\',false);" value="false"></img>' . translate('selectnone') . '<br/>';
-	$body .= '<img src="https://www.tieka.nl/statistics404/img/delete.png" title="' . translate('delete_allselected') . '" onclick="
+	$body .= '<img src="http://www.tieka.nl/statistics404/img/checkboxon_low.png" title="' . translate('selectall') . '" onclick="$(\':checkbox\').attr(\'checked\',true);" value="true"></img>' . translate('selectall') . '<br/>';
+	$body .= '<img src="http://www.tieka.nl/statistics404/img/checkboxoff_low.png" title="' . translate('selectnone') . '" onclick="$(\':checkbox\').attr(\'checked\',false);" value="false"></img>' . translate('selectnone') . '<br/>';
+	$body .= '<img src="http://www.tieka.nl/statistics404/img/delete.png" title="' . translate('delete_allselected') . '" onclick="
 	var indexlist=\'\';
 	$(\'input[type=checkbox]\').each(function () {if (this.checked){indexlist += (indexlist==\'\' ? this.name : \'-\' + this.name);};});
 	doAction(\'delete_allselected\',indexlist+\'' . $actionvarparameters . '\');
 	"></img>' . translate('delete_allselected') . '<br/>';
-	$body .= '<img src="https://www.tieka.nl/statistics404/img/eyeopen_low.png" title="' . translate('status_newtoseen_allselected') . '" onclick="
+	$body .= '<img src="http://www.tieka.nl/statistics404/img/eyeopen_low.png" title="' . translate('status_newtoseen_allselected') . '" onclick="
 	var indexlist=\'\';
 	$(\'input[type=checkbox]\').each(function () {if (this.checked){indexlist += (indexlist==\'\' ? this.name : \'-\' + this.name);};});
 	doAction(\'status_newtoseen_allselected\',indexlist+\'' . $actionvarparameters . '\');
 	"></img>' . translate('status_newtoseen_allselected') . '<br/>';
-	$body .= '<img src="https://www.tieka.nl/statistics404/img/eyeclosed_low.png" title="' . translate('status_seentonew_allselected') . '" onclick="
+	$body .= '<img src="http://www.tieka.nl/statistics404/img/eyeclosed_low.png" title="' . translate('status_seentonew_allselected') . '" onclick="
 	var indexlist=\'\';
 	$(\'input[type=checkbox]\').each(function () {if (this.checked){indexlist += (indexlist==\'\' ? this.name : \'-\' + this.name);};});
 	doAction(\'status_seentonew_allselected\',indexlist+\'' . $actionvarparameters . '\');
@@ -238,7 +238,7 @@
 	if ($my_view == 1) {//Titlecell # (only shown in Grouped view)
 		$body .= '<th class="tableheader" style="width: 25px;">
 		<span onclick="doAction(\'sort_on_field\',\'aantal' . $actionvarparameters . '\');">' . translate('number') . '</span>';
-		$body .= (($my_sortfield == 'aantal') ? '<img src="https://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . ' <br/></th>';
+		$body .= (($my_sortfield == 'aantal') ? '<img src="http://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . ' <br/></th>';
 	};
 	if ($my_view == 1) {//Titlecell url/referer (smaller shown in Grouped view compared to Detailed view)
 		$body .= '<th class="tableheader" style="width: 250px;">';
@@ -247,18 +247,18 @@
 		$body .= '<th class="tableheader" style="width: 275px;">';
 	};
 	$body .= '<span onclick="doAction(\'sort_on_field\',\'request_uri' . $actionvarparameters . '\');">' . translate('url') . '</span>';
-	$body .= (($my_sortfield == 'request_uri') ? '<img src="https://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . ' <br/>';
+	$body .= (($my_sortfield == 'request_uri') ? '<img src="http://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . ' <br/>';
 	$body .= '<span onclick="doAction(\'sort_on_field\',\'referer' . $actionvarparameters . '\');">' . translate('referer') . '</span>';
-	$body .= (($my_sortfield == 'referer') ? '<img src="https://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . ' <br/>';
+	$body .= (($my_sortfield == 'referer') ? '<img src="http://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . ' <br/>';
 	$body .= '</th>
 	<th style="width: 200px;"><span class="columnsorttext">' . translate('click_to_sort') . '</span><br/><br/></th>
 	<th style="width: 150px;"></th>
 	<th class="tableheader" style="width: 80px;">
 	<span onclick="doAction(\'sort_on_field\',\'datetime' . $actionvarparameters . '\');">' . translate('Date') . '/'
-	. (($my_sortfield == 'datetime') ? '<img src="https://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . '<br/>' . translate('Time') . '</span></th>
+	. (($my_sortfield == 'datetime') ? '<img src="http://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . '<br/>' . translate('Time') . '</span></th>
 	<th class="tableheader" style="width: 70px;">
 	<span onclick="doAction(\'sort_on_field\',\'update_data2' . $actionvarparameters . '\');">404' . '/'
-	. (($my_sortfield == 'update_data2') ? '<img src="https://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . '<br/>' . translate('Noresult') . '</span></th>
+	. (($my_sortfield == 'update_data2') ? '<img src="http://www.tieka.nl/statistics404/img/sorted' . (($my_sortdirection == 'ASC') ? 'up' : 'down') . '.png"></img>' : '') . '<br/>' . translate('Noresult') . '</span></th>
 	</tr>'; //Titlecells datetime and 404/Noresult
 	$row = mysql_fetch_array($result);
 	while ($row) { //Tablelines with urldata
@@ -269,13 +269,13 @@
 		else {
 			$body .= '<td><input type="checkbox" name="' . $row['index'] . '"></td>';
 		};
-		$body .= '<td><img src="https://www.tieka.nl/statistics404/img/delete.png" title="' . translate('Delete') . '" onclick="doAction(\'delete\',\'' . (($my_view == 1) ? $row['request_uri'] : $row['index']) . $actionvarparameters . '\');"></img></td>';
+		$body .= '<td><img src="http://www.tieka.nl/statistics404/img/delete.png" title="' . translate('Delete') . '" onclick="doAction(\'delete\',\'' . (($my_view == 1) ? $row['request_uri'] : $row['index']) . $actionvarparameters . '\');"></img></td>';
 		if ($row['status'] == 'seen') {
-			$body .= '<td><img src="https://www.tieka.nl/statistics404/img/eyeopen.png" title="' . translate('status_seentonew') . '" 
+			$body .= '<td><img src="http://www.tieka.nl/statistics404/img/eyeopen.png" title="' . translate('status_seentonew') . '"
 			onclick="doAction(\'status_seentonew\',\'' . (($my_view == 1) ? $row['request_uri'] : $row['index']) . $actionvarparameters . '\');"></img></td>';
 		}
 		else {
-			$body .= '<td><img src="https://www.tieka.nl/statistics404/img/eyeclosed.png" title="' . translate('status_newtoseen') . '" 
+			$body .= '<td><img src="http://www.tieka.nl/statistics404/img/eyeclosed.png" title="' . translate('status_newtoseen') . '"
 			onclick="doAction(\'status_newtoseen\',\'' . (($my_view == 1) ? $row['request_uri'] : $row['index']) . $actionvarparameters . '\');"></img></td>';
 		};
 		if ($my_view == 1) {
